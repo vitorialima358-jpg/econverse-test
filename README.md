@@ -1,77 +1,135 @@
-<<<<<<< HEAD
-# econverse-test
-=======
-# React + TypeScript + Vite
+# Econverse Front-End Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido como parte de um desafio técnico para a vaga de **Desenvolvedor(a) Front-End**.
 
-Currently, two official plugins are available:
+A aplicação simula uma interface de e-commerce com listagem de produtos e modal de detalhes, construída a partir do layout disponibilizado no Figma do desafio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# 🚀 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* Vite
+* SCSS
+* Node.js
+* Git / GitHub
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 📦 Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Listagem de produtos
+* Modal com detalhes do produto
+* Seleção de quantidade
+* Layout baseado no protótipo do Figma
+* Estrutura de componentes reutilizáveis
+* Interface responsiva
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 📁 Estrutura do Projeto
+
+```
+src/
+ ├── assets
+ ├── components
+ │   ├── Header
+ │   ├── Hero
+ │   ├── CategorySection
+ │   ├── ProductList
+ │   ├── ProductModal
+ │   ├── BrandSection
+ │   └── Footer
+ ├── pages
+ │   └── Home
+ ├── services
+ ├── types
+ └── styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# ⚙️ Pré-requisitos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Antes de rodar o projeto é necessário ter instalado:
+
+* Node.js (versão 18 ou superior)
+* npm ou yarn
+* Git
+
+---
+
+# ▶️ Como rodar o projeto
+
+### 1️⃣ Clonar o repositório
+
+```bash
+git clone https://github.com/vitorialima358-jpg/econverse-test.git
 ```
->>>>>>> fc4fabe (feat: econverse front-end test)
+
+---
+
+### 2️⃣ Acessar a pasta do projeto
+
+```bash
+cd econverse-test
+```
+
+---
+
+### 3️⃣ Instalar as dependências
+
+```bash
+npm install
+```
+
+---
+
+### 4️⃣ Rodar o projeto em ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🧪 Testes
+
+Caso existam testes configurados no projeto, eles podem ser executados com:
+
+```bash
+npm run test
+```
+
+---
+
+# 🛠️ Build do projeto
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+Para visualizar a build localmente:
+
+```bash
+npm run preview
+```
+
+---
+
+# 👩‍💻 Desenvolvido por
+
+**Vitória Lima**
+
+* GitHub: https://github.com/vitorialima358-jpg
+* LinkedIn: https://linkedin.com/in/vitória-aparecida-a33bb512b
+
