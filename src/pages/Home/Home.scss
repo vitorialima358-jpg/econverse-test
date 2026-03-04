@@ -1,0 +1,95 @@
+.home {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* HERO ocupa 100% da tela */
+.hero-full {
+  width: 100%;
+}
+
+/* Conteúdo centralizado */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* GRID PRINCIPAL */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* =========================
+   PRODUTOS RELACIONADOS
+========================= */
+
+.related-products {
+  margin: 60px 0;
+}
+
+.related-products h2 {
+  text-align: center;
+  color: #3f3d99;
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tabs span {
+  color: #999;
+  transition: 0.2s ease;
+}
+
+.tabs span:hover {
+  color: #3f3d99;
+}
+
+.tabs .active {
+  color: #3f3d99;
+  font-weight: 600;
+  border-bottom: 2px solid #3f3d99;
+  padding-bottom: 4px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.see-all {
+  display: block;
+  font-size: 13px;
+  font-weight: 500; /* 👈 não tão pesado */
+  color: #444;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.see-all:hover {
+  color: #3f3d99;
+}
+.related-products {
+  text-align: center;
+}
+
+.related-products h2 {
+  color: #3f3d99;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.related-products p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 32px;
+}

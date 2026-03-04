@@ -1,0 +1,77 @@
+.related-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔹 IMAGEM */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.related-card img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+/* 🔹 TEXTO */
+.description {
+  font-size: 14px;
+  color: #666;
+  min-height: 40px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: #999;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+.installments {
+  font-size: 12px;
+  color: #666;
+}
+
+.free-shipping {
+  font-size: 12px;
+  color: #3442b5;
+  font-weight: 500;
+}
+
+/* 🔹 BOTÃO */
+.related-card button {
+  margin-top: auto;
+  background: #3442b5;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.related-card button:hover {
+  opacity: 0.85;
+}

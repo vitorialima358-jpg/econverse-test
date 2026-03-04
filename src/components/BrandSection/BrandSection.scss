@@ -1,0 +1,65 @@
+.brands {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.brands__title {
+  color: #3f3d99;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.brands__container {
+  max-width: 1250px;  /* igual ao Figma */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 211px);
+  justify-content: space-between;
+}
+
+.brand-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+.brand-card img {
+  width: 120%;
+  height: 120%;
+  object-fit: contain;
+}
+
+.brand-card:hover {
+  transform: translateY(-6px);
+}
+
+.brand-card span {
+  font-weight: 600;
+  color: #3f3d99;
+}
+@media (max-width: 1200px) {
+  .brands__container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .brand-card {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

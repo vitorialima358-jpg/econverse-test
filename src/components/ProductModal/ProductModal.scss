@@ -1,0 +1,100 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 32px;
+  width: 650px;
+  position: relative;
+}
+
+.modal-body{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.modal-image{
+  width: 180px;
+}
+
+.modal-info{
+  flex: 1;
+}
+
+.modal-info h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal-price{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-description{
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.modal-link{
+  font-size: 14px;
+  color: #3f3d99;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modal-actions{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button{
+  border: none;
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.modal-buy{
+  background: #f7ca11;
+  border: none;
+  padding: 10px 28px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
